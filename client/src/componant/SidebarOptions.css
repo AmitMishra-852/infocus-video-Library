@@ -1,0 +1,18 @@
+.sidebaroption{
+    display: flex;
+    align-items: center;
+    margin: 15px 0;
+    cursor: pointer;
+}
+
+.sidebaroption-icon{
+    font-size: 20px!important;
+    margin: 0 15px;
+}
+
+.sidebaroption-title{
+    font-size: 14px ;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 800;
+}
+

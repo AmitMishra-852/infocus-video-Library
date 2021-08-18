@@ -1,0 +1,113 @@
+.header{
+    border-bottom:1px solid rgb(196, 196, 196);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 50px;
+    position: sticky;
+    top: 0;
+    background-color: #fafafa;
+    z-index: 1;
+}
+
+.header>a{
+    text-decoration: none;
+}
+.header-login{
+    display: flex;
+}
+.logo{
+    display: flex;
+    margin:0 10px;
+}
+
+
+.header-logo{
+    margin:0 10px;
+    padding: 5px 0;
+    color:rgb(104, 46, 151);
+    font-weight: 600;
+    font-family: sans-serif;
+}
+
+.header-sub-logo{
+    background-color:rgb(104, 46, 151) ;
+    color:white;
+    padding:5px;
+}
+
+.header-search{
+    display: flex;
+    align-items: center;
+    flex: 0.4;
+    border: 1px solid rgb(196, 196, 196);
+
+}
+
+@media(max-width:900px){
+    .header-search{
+        display: none;
+    }
+}
+    
+.header-search-input{
+    width:100%;
+    padding: 5px;
+    border: none;
+
+}
+.header-search-:focus{
+   outline: none;
+}
+
+.searchIcon{
+    border-left :1px solid rgb(196, 196, 196);
+    font-size: 25px!important;
+    padding: 0 10px;
+    color:rgb(133, 133, 133);
+}
+.header-login{
+    margin-right:10px;
+}
+.header-login-main{
+    margin: 0 10px;
+    font-size: 17px;
+    font-weight: 600;
+    font-family: sans-serif;
+}
+.header-signup{
+    margin: 0 10px;
+    font-size: 17px;
+    font-weight: 600;
+    font-family: sans-serif;
+}
+
+.profileimg-hambarger{
+    display: flex;
+    align-items: center;
+    margin: 0 10px;
+}
+.profile-img{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin: 0 10px;
+}
+
+.profile{
+    display: flex;
+    align-items: center;
+    margin: 0 10px;
+}
+
+@media(max-width:500px){
+    .profile{
+        display: none;
+    }
+}
+.profile-name{
+    font-size: 14px;
+    font-family: sans-serif;
+    font-weight: 600;
+}

@@ -1,0 +1,115 @@
+.watch-leter{
+    width: 80%;
+    margin: auto; 
+    margin-top: 10px; 
+}
+
+.watch-leter-videos{
+    display:flex;
+    padding: 10px;
+    border:1px solid rgb(221, 221, 221);
+    background-color: white;
+}
+
+.watch-leter-videos-img{
+    width:350px;
+    height:auto;
+    object-fit:cover;  
+}
+
+
+.watch-leter-videos-info{
+    display:flex;
+    margin:0 10px;
+    background-color: white;
+}
+
+.watch-leter-user-profile{
+    width:40px;
+    height:40px;
+    border-radius:50%;
+    object-fit:cover;
+    margin:0 10px;
+}
+
+.watch-leter-about-videos{
+    background-color: white;
+}
+
+.watch-leter-title{
+    font-size: 14px;
+    font-weight: 700;
+    font-family: sans-serif;
+}
+
+.watch-leter-channelname{
+    font-size: 13px;
+    font-family:sans-serif;
+    font-weight: 700;
+}
+
+.watch-leter-time{
+    font-size: 15px;
+    color:rgb(153, 153, 153);
+    font-size: 11px;
+    
+}
+
+.time-remove{
+    display: flex;
+    flex-direction:column;
+    width:fit-content;
+    margin-top: 12px;
+}
+
+.remove-watchlater{
+    margin: 10px 0;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    background-color: rgb(178, 118, 226) ;
+    color:white;
+    font-family: sans-serif;
+}
+.remove-watchlater:focus{
+    background-color: rgb(91, 43, 129) ;
+}
+
+@media(max-width:800px){
+    .watch-leter-videos{
+        flex-direction: column;
+    }
+    .watch-leter-videos-img{
+        width:100%;
+    }
+    .watch-leter-videos-info{
+        margin:10px 10px;
+    }
+}
+
+@media(max-width:500px){
+    .LInk-container{
+        margin: 0;
+    }
+    .watch-leter{
+        width: 100%;
+    }
+    .time-remove{
+        align-items: center;
+        flex-direction:row;
+    }
+
+    .remove-watchlater{
+       margin: 0 15px;
+    }
+}
+
+@media(max-width:400px){
+    .watch-leter-videos{
+        padding:0px;
+        margin: 0px;
+    }
+    .watch-leter-videos-img{
+        object-fit: contain;
+    }
+}

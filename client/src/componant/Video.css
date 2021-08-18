@@ -1,0 +1,78 @@
+.video{
+    /* border:1px solid black; */
+    padding:10px;
+}
+
+.videoimg{
+    width:100%;
+    object-fit: cover;
+    height: auto;
+}
+
+
+.video-container{
+    display:flex;
+    padding:5px;
+}
+
+.user-Profile-img{
+   width: 25px;
+   height: 25px;
+   border-radius: 50%;
+   object-fit: cover;
+   margin:0 10px;
+}
+
+.videoinfo-title{
+    font-size: 15px;
+    font-weight: 600;
+    font-family: sans-serif;
+}
+
+.videoinfo-channelname{
+    font-size: 13px;
+    font-weight: 600;
+    font-family: sans-serif;
+    margin:5px 0 ;
+}
+
+.views-time{
+    display: flex;
+    align-items: center;
+}
+
+.views{
+    display: flex;
+    align-items: center;
+    font-size: 13px;
+    color:gray; 
+}
+.icon{
+    font-size: 14px!important;
+    margin:0 5px;
+}
+
+.time{
+    font-size: 13px;
+    margin:0 5px;
+    color:gray;
+} 
+
+@media(max-width:500px){
+    .video{
+        margin: 5px 0;   
+        padding:10px 0px; 
+    } 
+}
+
+
+@media(max-width:400px){
+    .videoinfo-title{
+        font-size: 13px;
+    }
+    .videoinfo-channelname{
+        font-size: 11px; 
+    }
+}
+
+

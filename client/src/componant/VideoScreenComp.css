@@ -1,0 +1,158 @@
+.videoscreen{
+    display: flex;
+}
+
+@media(max-width:1000px){
+    .videoscreen{
+       flex-direction: column;
+    }
+}
+
+.reactplayer{
+    flex:0.65;
+    height: calc(100vh);
+    margin:20px;
+}
+
+.player-wrapper{
+    position:relative;
+    padding-top: 56.25%;
+    margin:0 0 0 20px;
+
+}
+.video-Player{
+   position: absolute;
+   top: 0;
+   left: 0;
+}
+
+.videoplayerinfo{
+    display:flex;
+    padding: 10px;
+}
+
+ .about-video{
+    width: 100%;
+} 
+
+.userplayerImg{
+    width: 35px;
+    height: 35px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin:0 10px;
+}
+
+
+.videoplayerinfo-title{
+    font-family: sans-serif;
+    font-weight: 600;
+}
+
+.videoplayerinfo-channelname{
+    font-family: sans-serif;
+    font-size: 15px;
+    font-weight: 600;
+    margin: 5px 0;
+}
+
+.videoplayer-views-time{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    font-size: 13px;
+    color: gray;
+}
+
+.views-time{
+    display: flex;
+    align-items: center;
+}
+
+.featured-icon{
+    display: flex;
+    align-items: center;
+}
+
+.like{
+    display: flex;
+    align-items: center;
+    margin: 0 15px;
+}
+.unlike{
+    display: flex;
+    align-items: center;
+}
+
+.save-video{
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}  
+
+.recommend-videos{
+   flex:  0.3;
+   margin:0 0 0 30px;
+}
+
+.recommend-title{
+    margin-top: 10px;
+    font-size: 25px;
+    padding:10px 0;
+    font-family: sans-serif;
+}
+
+@media(max-width:500px){
+    .reactplayer{
+        margin:10px 0;
+    }
+    .player-wrapper{
+        margin:0;
+    }
+    .recommend-videos{
+        margin:0;
+    }
+    .recommend-title{   
+        font-size:20px;
+        padding:0 10px;
+    }
+    .videoplayerinfo-title{
+       font-size: 15px;
+    }
+    .videoplayerinfo-channelname{
+        font-size: 14px;
+    }
+    .userplayerImg{
+        width: 30px;
+        height: 30px; 
+    }
+}
+
+@media(max-width:500px){
+  .videoplayerinfo-title{
+      font-size: 13px;
+    }
+  .recommend-title{   
+      display:none; 
+  } 
+}
+
+@media(max-width:320px){
+    .videoplayer-views-time{
+        flex-direction: column;
+    }
+    .like{
+        margin:0;
+    }
+    .featured-icon{
+        justify-content:space-between;
+    }
+}
+
+@media(max-width:1000px){
+  .reactplayer{
+      border-bottom:1px solid gray;
+      padding-bottom: 20px;
+  }
+}
+

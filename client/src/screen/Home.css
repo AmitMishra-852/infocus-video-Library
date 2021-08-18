@@ -1,0 +1,27 @@
+.Home{
+    display: flex;
+    flex-direction: column;
+    background-color: #fafafa;
+}
+
+.home-search{
+    display: none;
+    justify-content: center;
+    align-items: center;
+    height: 40px;
+}
+.home-search>input{
+    height: 20px;
+    width:30%;
+}
+
+@media(max-width:900px){
+    .home-search{
+        display: flex;
+    }
+}
+@media(max-width:500px){
+    .home-search>input{
+        width:70%;
+    }
+}

@@ -1,0 +1,21 @@
+.Videopage{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+@media(max-width:1100px){
+    .Videopage{
+        grid-template-columns: repeat(2,1fr); 
+    }
+}
+
+@media(max-width:500px){
+    .Videopage{
+        grid-template-columns: repeat(1,1fr); 
+        margin: 0;
+        width: 100%;
+    }
+}

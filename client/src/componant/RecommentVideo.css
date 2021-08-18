@@ -1,0 +1,61 @@
+.Recomments{
+    margin: 10px;
+}
+.Recomments-videos{
+    display: flex;
+}
+
+.Recomments-videos-img{
+    width:40%;
+    /* height: 100%; */
+    height: auto;
+    object-fit: cover;
+}
+
+
+.Recomments-videos-info{
+    display: flex;
+    padding: 5px;
+}
+
+.Recomments-user-profile{
+    width:30px;
+    height: 30px;
+    margin:0 10px;
+    border-radius: 50%;
+    object-fit:cover;
+}
+
+.Recommentstitle{
+    font-size: 13px;
+    font-family: sans-serif;
+    font-weight: 600;
+}
+
+.Recomments-channelname{
+    font-size: 14px;
+    font-weight: 600;
+    color: rgb(61, 61, 61);
+}
+
+.Recomments-time{
+    font-size: 13px;
+    color: gray;
+}
+
+@media(max-width:450px){
+
+    .Recomments-channelname{
+        font-size: 10px;
+    }
+    .Recommentstitle{
+        font-size: 12px;
+    }
+    .Recomments-user-profile{
+        margin: 0 5px;
+    }
+    .Recomments-time{
+        font-size: 10px;
+        
+    }
+}
