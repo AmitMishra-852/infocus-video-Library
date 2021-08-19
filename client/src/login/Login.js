@@ -17,19 +17,18 @@ function Login() {
    const [email , setEmail] = useState("");
    const [password , setPassword] = useState("")
 
-    const history = useHistory()
+   const history = useHistory()
 
-    const {user,isFatching,dispatch} = StateHandler()
+   const {user,isFatching,dispatch} = StateHandler()
     
-    
-    
+   
     const submitHandler = async (e) => {
         e.preventDefault()
         const userCredential = {email, password}
         
         dispatch({type:"LOGIN-START"})
         try {
-            const res = await axios.post("http://localhost:5000/api/auth/login", userCredential ,
+            const res = await axios.post("/api/auth/login", userCredential,
             {headers:{authorization : "abcdefghi"}})
 
             console.log(res.data)

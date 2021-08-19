@@ -22,7 +22,7 @@ function VideoScreenComp({ onClickHandler, onStartHandler, postData, postUser , 
 
     useState(()=>{
         const getAllvideos =async() =>{
-           const res =await axios.get("http://localhost:5000/api/post")
+           const res =await axios.get("/api/post")
            setVideos(res?.data)
         }
         getAllvideos()

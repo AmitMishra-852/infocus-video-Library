@@ -13,7 +13,7 @@ function WatchLater({ click }) {
     const { user } = StateHandler();
      useEffect(()=>{
         const getAllWatchVideo = async() =>{
-            const res = await axios.get(`http://localhost:5000/api/watchLater/${user._id}`)
+            const res = await axios.get(`/api/watchLater/${user._id}`)
             setWatchLater(res.data)
         }
         getAllWatchVideo()

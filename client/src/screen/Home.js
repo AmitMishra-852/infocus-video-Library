@@ -12,7 +12,7 @@ function Home({click}) {
     useEffect(() => {   
         try{
             const getVideos = async () => {
-                const res = await axios.get("http://localhost:5000/api/post")
+                const res = await axios.get("/api/post")
                 setVideos(res?.data)
             }
             getVideos()

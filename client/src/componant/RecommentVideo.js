@@ -9,7 +9,7 @@ function RecommentVideo({ video }) {
 
     useEffect(() => {
         const getAllUser = async () => {
-            const res = await axios.get(`http://localhost:5000/api/user/${video.userId}`)
+            const res = await axios.get(`/api/user/${video.userId}`)
             setUsers(res.data)
         }
         getAllUser()

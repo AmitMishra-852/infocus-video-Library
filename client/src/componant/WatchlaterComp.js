@@ -6,7 +6,7 @@ import axios from "axios";
 function WatchlaterComp({ video }) {
 
     const clickHandler = async () => {
-        const res = await axios.delete(`http://localhost:5000/api/watchLater/${video._id}`)
+        const res = await axios.delete(`/api/watchLater/${video._id}`)
         console.log(res.data.message)
         window.location.reload()
     }

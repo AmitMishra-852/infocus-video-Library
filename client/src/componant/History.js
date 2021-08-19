@@ -8,7 +8,7 @@ function History({ video }) {
     console.log("videos",video._id)
 
     const removeHandler = async() => {
-        const res = await axios.delete(`http://localhost:5000/api/history/${video._id}`) 
+        const res = await axios.delete(`/api/history/${video._id}`) 
         console.log(res.data.message)
         window.location.reload()
     }

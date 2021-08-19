@@ -10,7 +10,7 @@ function Video({ item }) {
     const [getUser, setGetUser] = useState();
     useEffect(() => {
         const getUser = async () => {
-            const res = await axios.get(`http://localhost:5000/api/user/${item.userId}`)
+            const res = await axios.get(`/api/user/${item.userId}`)
             setGetUser(res?.data)
         }
         getUser()

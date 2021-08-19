@@ -22,7 +22,7 @@ function VideoScreen({ click }) {
 
     useEffect(() => {
         const getPost = async () => {
-            const res = await axios.get(`http://localhost:5000/api/post/${videoId}`)
+            const res = await axios.get(`/api/post/${videoId}`)
             setPostData(res.data)
     
         }

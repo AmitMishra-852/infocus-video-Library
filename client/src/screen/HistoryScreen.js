@@ -16,7 +16,7 @@ function HistoryScreen({click}) {
 
     useEffect(() => {
         const getHistoryVideos = async () => {
-            const res = await axios.get(`http://localhost:5000/api/history/currentUser/${user._id}`)
+            const res = await axios.get(`/api/history/currentUser/${user._id}`)
             setState(res.data);
         }
         getHistoryVideos()
