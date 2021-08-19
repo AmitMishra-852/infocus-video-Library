@@ -32,7 +32,7 @@ function VideoScreen({ click }) {
 
     useEffect(() => {
         const getUser = async () => {
-            const res = await axios.get(`http://localhost:5000/api/user/${postData?.userId}`)
+            const res = await axios.get(`/api/user/${postData?.userId}`)
             setPostUser(res.data)
         }
         getUser()
@@ -52,7 +52,7 @@ function VideoScreen({ click }) {
         }
 
         try {
-            const res = await axios.post(`http://localhost:5000/api/history`, items)
+            const res = await axios.post(`/api/history`, items)
             console.log(res.data.message)
             setPopMessage(res.data.message)
             setTimeout(() => {
@@ -81,7 +81,7 @@ function VideoScreen({ click }) {
         }
 
         try {
-            const res = await axios.post("http://localhost:5000/api/Watchlater", items)
+            const res = await axios.post("/api/Watchlater", items)
             console.log(res.data.message)
             setPopMessage(res.data.message)
             setTimeout(() => {

@@ -40,7 +40,7 @@ function VideoScreenComp({ onClickHandler, onStartHandler, postData, postUser , 
         }
 
         try {
-            const res = await axios.put(`http://localhost:5000/api/post/likes/${postData?._id}`, {
+            const res = await axios.put(`/api/post/likes/${postData?._id}`, {
                 currentUserId: user?._id
             })
 

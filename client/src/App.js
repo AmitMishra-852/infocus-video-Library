@@ -38,7 +38,7 @@ function App() {
             {!user ? <Register /> : <Login /> }
           </Route>
           <Route exact path="/video/:videoId">
-            <VideoScreen click={() => setToggle(true)}  />
+            {user ? <VideoScreen click={() => setToggle(true)}  /> : <Login />}
           </Route>
           <Route exact path="/watchLater">
             {user ? <WatchLater click={() => setToggle(true)} /> : <Login />}
