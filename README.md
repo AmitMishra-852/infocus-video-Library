@@ -20,6 +20,7 @@ _INFocusTube_, Built with an UI resembling Youtube, this application offers user
 - User Authentication
 - One place for all your liked videos
 - History to keep tab of your recent visits
+- Responsive
 
 # Live link and demo
 [Deployed Link](https://infocus-tube.herokuapp.com/ "APP")
